@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/action_logo"
+        android:layout_marginTop="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <Spinner
+                        android:id="@+id/spSalutation"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_bg" />
+
+                    <EditText
+                        android:id="@+id/etFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect"
+                        android:fontFamily="sans-serif"
+                        android:hint="First Name"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/etLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect"
+                        android:fontFamily="sans-serif"
+                        android:hint="Last Name"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/etFatherName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect"
+                        android:fontFamily="sans-serif"
+                        android:hint="Father Name"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"/>
+
+                    <Spinner
+                        android:id="@+id/genderSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_bg" />
+
+                    <Spinner
+                        android:id="@+id/religonSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_bg" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect"
+                        android:fontFamily="sans-serif"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etDOB"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/rounded_rect"
+                            android:fontFamily="sans-serif"
+                            android:hint="Date of Birth(DD/MM/YY)"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000"
+                            android:textSize="18sp"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"/>
+
+                        <Button
+                            android:id="@+id/btn_date"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:background="@drawable/ic_date_range" />
+
+                    </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/etPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect"
+                        android:fontFamily="sans-serif"
+                        android:hint="Mobile No"
+                        android:inputType="phone"
+                        android:maxLines="4"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"/>
+
+                    <Spinner
+                        android:id="@+id/sBloodGroup"
+                        style="@style/Widget.AppCompat.Spinner.DropDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_bg"
+                        android:gravity="center_vertical"
+                        android:spinnerMode="dropdown" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect"
+                        android:fontFamily="sans-serif"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/etCPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect"
+                        android:fontFamily="sans-serif"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ivImage"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/profile" />
+
+                        <Button
+                            android:id="@+id/btnSelectPhoto"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/image_icon" />
+
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/sCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_bg" />
+
+                    <Spinner
+                        android:id="@+id/sState"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_bg" />
+
+                    <Spinner
+                        android:id="@+id/sDistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_bg" />
+
+                    <EditText
+                        android:id="@+id/etCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect"
+                        android:fontFamily="sans-serif"
+                        android:hint="City"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/etReferenceId"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_rect"
+                        android:fontFamily="sans-serif"
+                        android:hint="Reference ID"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:background="#2E72B6"
+                android:text="Submit"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
